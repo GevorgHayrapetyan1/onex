@@ -15,6 +15,9 @@
 body{
     font-family: Montserrat, serif;
 }
+a{
+    text-decoration: none;
+}
 .container{
     max-width: 1400px;
     margin: 0 auto;
@@ -27,7 +30,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 30px 0;
+    gap: 25px 0;
+}
+.j-content{
+    justify-content: center !important;
 }
 .align-center{
     align-items: center;
@@ -43,7 +49,8 @@ body{
     color: white;
 }
 .bg-secondary{
-    background: rgba(5,5,5,0.08);
+    background: #f9f9f8;
+    border-radius: 20px;
 }
 .bg-wt{
     background: white;
@@ -65,8 +72,21 @@ body{
 }
 .btn-secondary{
     font-size: 20px;
-    padding: 20px 50px;
+    padding: 15px 50px;
     border: 1px solid #5DBA2F;
+    background-color: white;
+    color: #5DBA2F;
+
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+.text-field{
+
+    button{
+       padding: 10px 80px;
+    }
 }
 .py-2{
     padding: 20px 0;
@@ -105,10 +125,14 @@ body{
     font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
 }
 .text{
     font-size: 14px;
-    margin: 10px 0;
+    margin: 16px 0;
+    padding: 0 0 20px;
+    text-align: center;
+    letter-spacing: 1px;
 }
 .input-filed{
     width: 80%;
@@ -118,11 +142,13 @@ body{
 .input-control{
     width: 80%;
     height: 47px;
-    border: none;
     outline: none;
+    padding: 0 10px;
+    border: 1px solid;
+    border-radius: 10px 0 0 10px;
 }
 .text-field{
-    width: 45%;
+    width: 37%;
 }
 .img-fluid{
     width: 40%;
@@ -136,14 +162,18 @@ body{
     }
 }
 .card-2{
-    width: 22%;
-    padding: 20px;
+ width: 25%;
 
-  img{
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
+
+    img{
+        height: 200px;
+        object-fit: contain;
+    }
 }
+.menu-img{
+    height: 400px;
+    object-fit: contain;
+    width: 40%;
 }
 .img-icon{
     width: 28px;
@@ -152,17 +182,101 @@ body{
 }
 .photo{
     width: 50%;
-    font-size: 13px;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    text-transform: uppercase;
-    border: 1px solid;
-
+    margin: 20px 0;
 }
 .icon{
-    width: 39%;
-    font-size: 14px;
+   width: 32%;
     align-items: center;
     object-fit: contain;
+}
+.video-1{
 
+    .img-fluid{
+        height: 300px;
+        border-radius: 10px;
+    }
+}
+.block-img{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.div1 {
+    grid-row: span 2 / span 2;
+}
+
+.div2 {
+    grid-row: span 2 / span 2;
+}
+
+.div3 {
+    grid-row: span 2 / span 2;
+}
+
+.div4 {
+    grid-row: span 2 / span 2;
+}
+
+.div5 {
+    grid-row: span 2 / span 2;
+}
+
+.div6 {
+    grid-row: span 2 / span 2;
+}
+
+.div7 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div8 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div9 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div10 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div11 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div12 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+.block{
+    width: 100%;
+
+    .parent{
+        width: 60%;
+        margin: auto;
+        padding: 0 0 30px;
+    }
+    button{
+        display: block;
+        margin: auto;
+        font-size: 15px;
+    }
 }
